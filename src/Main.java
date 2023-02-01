@@ -120,7 +120,7 @@ public class Main {
                             Patient inputPatient = new Patient(patientType, patientName, patientBreed, inputOwner, patientVaccinates);
                             inputOwner.setPets(inputPatient);
                             ownerList.add(inputOwner);
-                            System.out.println("The patient: " + inputPatient + "Ha sido registrado");
+                            System.out.println("The patient: " + inputPatient.getName() + "Ha sido registrado");
                             init();
                         } else {
                             Owner inputOwner = new Owner(ownerDni, ownerName, ownerCellphone, ownerAge);
